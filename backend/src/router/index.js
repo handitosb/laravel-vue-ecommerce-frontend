@@ -4,12 +4,13 @@ import Dashboard from "../views/Dashboard.vue"
 import Home from "../views/Home.vue"
 import Login from "../views/Login.vue"
 import NotFound from "../components/NotFound.vue"
+import Places from "../views/Places.vue"
 import Products from "../views/Products.vue"
 import ResetPassword from "../views/ResetPassword.vue"
 import Register from "../views/Register.vue"
 
 const routes = [
-    {
+    /* {
         path: '/app',
         name: 'app',
         component: AppLayout,
@@ -28,7 +29,7 @@ const routes = [
                 component: Products
             },
         ]
-    },
+    }, */
     {
         path: '/',
         name: 'home',
@@ -38,9 +39,25 @@ const routes = [
         },
     },
     {
+        path: '/dashboard',
+        name: 'dashboard',
+        component: Dashboard,
+        meta: {
+            requiresGuest: false
+        },
+    },
+    {
         path: '/login',
         name: 'login',
         component: Login,
+        meta: {
+            requiresGuest: true
+        },
+    },
+    {
+        path: '/places',
+        name: 'places',
+        component: Places,
         meta: {
             requiresGuest: true
         },

@@ -7,8 +7,8 @@
             alt="logo"
         />
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PLACES</a></li>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/places">PLACES</a></li>
             <li><a href="#">ABOUT US</a> </li>
             <li><a href="#">CONTACT</a></li>
         </ul>
@@ -22,7 +22,7 @@
 
 nav {
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     padding: 20px 8%;

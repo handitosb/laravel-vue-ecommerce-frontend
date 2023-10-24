@@ -9,8 +9,7 @@ export default {
     extend: {},
   },
   plugins: [
-    require('@tailwindcss/forms'),
-    require("tw-elements/dist/plugin.cjs")
+    require('@tailwindcss/forms', "tw-elements/dist/plugin.cjs", '@tailwindcss/aspect-ratio')
   ],
 }
 
